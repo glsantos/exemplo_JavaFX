@@ -1,0 +1,21 @@
+package model;
+
+import java.util.ArrayList;
+
+public class LivroDao {
+
+
+	ArrayList<Livro> lstLivros = new ArrayList<>();
+
+
+	public void inserir(Livro l){
+
+		lstLivros.add(l);
+	}
+
+	public ArrayList<Livro> selecionarTodos(){
+
+		return lstLivros;
+	}
+
+}

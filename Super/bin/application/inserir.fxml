@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="300.0" minWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Inserir">
+   <children>
+      <Label layoutX="63.0" layoutY="73.0" text="INSERIR LIVRO">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#voltar" text="Voltar" />
+      <Button layoutX="89.0" layoutY="243.0" mnemonicParsing="false" onAction="#salvar" prefHeight="43.0" prefWidth="122.0" text="SALVAR" />
+      <TextField fx:id="txtTitulo" layoutX="76.0" layoutY="125.0" promptText="Título" />
+      <TextField fx:id="txtEditora" layoutX="76.0" layoutY="156.0" promptText="Editora" />
+      <TextField fx:id="txtAno" layoutX="76.0" layoutY="187.0" promptText="Publicação(Ano)" />
+   </children>
+</AnchorPane>

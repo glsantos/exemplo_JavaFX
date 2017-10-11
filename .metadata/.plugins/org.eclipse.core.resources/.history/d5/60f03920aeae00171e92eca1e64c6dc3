@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane minHeight="300.0" minWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.Visualizar">
+   <children>
+      <Button layoutX="14.0" layoutY="2.0" mnemonicParsing="false" text="Voltar" />
+      <TableView layoutY="35.0" prefHeight="265.0" prefWidth="300.0">
+        <columns>
+          <TableColumn prefWidth="120.0" text="C1" />
+          <TableColumn prefWidth="109.0" text="C2" />
+            <TableColumn prefWidth="70.0" text="Column X" />
+        </columns>
+      </TableView>
+      <Label layoutX="127.0" layoutY="11.0" text="LIVROS" />
+   </children>
+</AnchorPane>

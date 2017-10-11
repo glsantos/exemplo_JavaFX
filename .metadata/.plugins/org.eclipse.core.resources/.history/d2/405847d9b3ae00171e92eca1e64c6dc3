@@ -1,0 +1,38 @@
+package application;
+
+import java.util.ArrayList;
+
+import javafx.fxml.FXML;
+import model.Livro;
+import model.LivroDao;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+
+public class Visualizar {
+
+	@FXML TableColumn clTitulo;
+	@FXML TableColumn clEditora;
+	@FXML TableColumn clAno;
+	@FXML TableView clLivro;
+
+	@FXML public void voltar() {
+
+		Main.abrirTela("main");
+	}
+
+	public void initialize(){
+
+		LivroDao dao = LivroDao.getInstance();
+
+		ArrayList<Livro> lstLivros = dao.selecionarTodos();
+
+		for(Livro item : lstLivros){
+
+			System.out.println("TÍTULO:" +item.getTitulo());
+			System.out.println("EDITORA:" +item.getEditora());
+			System.out.println("ANO:" +item.getAno());
+		}
+
+	}
+
+}

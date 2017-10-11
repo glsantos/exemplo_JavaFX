@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="300.0" minWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="76.0" layoutY="101.0" promptText="Título" />
+      <TextField layoutX="76.0" layoutY="136.0" promptText="Editora" />
+      <TextField layoutX="76.0" layoutY="172.0" promptText="Publicação(Ano)" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#start" text="Voltar" />
+      <Button layoutX="76.0" layoutY="222.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="149.0" text="Salvar" />
+      <Label layoutX="111.0" layoutY="66.0" text="INSERIR LIVRO" />
+   </children>
+</AnchorPane>

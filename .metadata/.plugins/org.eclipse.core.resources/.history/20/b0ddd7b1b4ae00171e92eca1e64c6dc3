@@ -1,0 +1,42 @@
+package application;
+
+import java.util.ArrayList;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
+import model.Livro;
+import model.LivroDao;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
+
+public class Visualizar {
+
+	@FXML TableView clLivro;
+	@FXML TableColumn clTitulo;
+	@FXML TableColumn clEditora;
+	@FXML TableColumn clAno;
+
+
+	@FXML public void voltar() {
+
+		Main.abrirTela("main");
+	}
+
+	public void initialize(){
+
+		LivroDao dao = LivroDao.getInstance();
+
+		ArrayList<Livro> lstLivros = dao.selecionarTodos();
+
+
+		//Transformar ArrayList de livros em Observable List
+		ObservableList<Livro> source = FXCollections.observableArrayList(lstLivros);
+
+		clTitulo.setCellValueFactory(new PropertyValueFactory("titulo"));
+		clEditora.setCellValueFactory(new PropertyValueFactory("editora"));
+		clAno.setCellValueFactory(new PropertyValueFactory("ano"));
+
+	}
+
+}

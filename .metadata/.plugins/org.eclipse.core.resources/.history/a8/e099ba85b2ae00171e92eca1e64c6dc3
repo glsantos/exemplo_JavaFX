@@ -1,0 +1,31 @@
+package application;
+
+import java.util.ArrayList;
+
+import javafx.fxml.FXML;
+import model.Livro;
+import model.LivroDao;
+
+public class Visualizar {
+
+	@FXML public void voltar() {
+
+		Main.abrirTela("main");
+	}
+
+	public void initialize(){
+
+		LivroDao dao = LivroDao.getInstance();
+
+		ArrayList<Livro> lstLivros = dao.selecionarTodos();
+
+		for(Livro item : lstLivros){
+
+			System.out.println("titulo:" +item.getTitulo());
+			System.out.println("editora:" +item.getEditora());
+			System.out.println("ano:" +item.getAno());
+		}
+
+	}
+
+}

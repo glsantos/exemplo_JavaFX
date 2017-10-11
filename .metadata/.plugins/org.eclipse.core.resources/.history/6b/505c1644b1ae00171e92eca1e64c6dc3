@@ -1,0 +1,26 @@
+package application;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.TextField;
+import model.LivroDao;
+
+public class Inserir {
+
+	@FXML TextField txtTitulo;
+	@FXML TextField txtEditora;
+	@FXML TextField txtAno;
+
+	@FXML public void voltar() {
+
+		Main.abrirTela("main");
+
+	}
+
+	@FXML public void salvar() {
+
+		LivroDao dao = LivroDao.getIn;
+	}
+
+
+
+}

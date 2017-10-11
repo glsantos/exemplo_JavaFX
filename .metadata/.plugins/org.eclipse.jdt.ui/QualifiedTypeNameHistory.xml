@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javafx.scene.Parent"/>
+<fullyQualifiedTypeName name="javafx.fxml.FXMLLoader"/>
+<fullyQualifiedTypeName name="javafx.fxml.FXML"/>
+<fullyQualifiedTypeName name="model.LivroDao"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="model.Livro"/>
+<fullyQualifiedTypeName name="javafx.collections.FXCollections"/>
+<fullyQualifiedTypeName name="javafx.collections.ObservableList"/>
+<fullyQualifiedTypeName name="javafx.scene.control.cell.PropertyValueFactory"/>
+</qualifiedTypeNameHistroy>
